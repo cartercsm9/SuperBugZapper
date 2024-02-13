@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circles</title>
+
+    <link rel="icon" href="circles/icon.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="circles/circle.css" />
+
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script type="text/javascript" src="assign2.js"></script>
+</head>
+<body>
+
+    <div id="container">
+
+        <div class="score">
+            <div class="score_content">
+                <h1><span id="userScore">0</span></h1>
+                <h1 id="win" class="result" style="font-size: 35px; margin-right: 45px;"></h1>
+            </div>
+        </div>
+
+        <canvas id="gl-canvas" width="512" height="512">
+            Oops... your browser doesn't support the HTML5 canvas element
+        </canvas>
+
+        <button onclick="refreshPage()" class="button"><b>Try Again</b></button>
+
+
+        <div class="difficulty-container">
+            <img width="250px" height="250px" style="margin-left: 100px;" src="circles\8e31f97c-ba1e-4d7c-83a6-0df8a92580cc(1).webp">
+            <br>
+            <button onclick="setDifficulty('easy')" class="difficulty-button">Easy</button>
+            <button onclick="setDifficulty('medium')" class="difficulty-button">Medium</button>
+            <button onclick="setDifficulty('hard')" class="difficulty-button">Hard</button>
+            <br>
+            <button onclick="setDifficulty('endless')" class="difficulty-button" style="margin-left: 33mm;">Endless</button>
+        </div>
+    </div>
+
+
+    <script>
+        function refreshPage() {
+            location.reload();
+        }
+
+        function setDifficulty(difficulty) {
+            console.log('Selected difficulty:', difficulty);
+
+            // Show the canvas, score, and "Try Again" button
+            document.getElementById('gl-canvas').style.display = 'block';
+            document.querySelector('.score').style.display = 'block';
+            document.querySelector('.button').style.display = 'block';
+
+            // Hide the difficulty selection container
+            document.querySelector('.difficulty-container').style.display = 'none';
+            main(difficulty);
+        }
+    </script>
+
+
+</body>
+</html>

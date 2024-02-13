@@ -1,0 +1,123 @@
+@import url('https://fonts.cdnfonts.com/css/arcade-classic');
+body {
+    background-color: black;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 96vh;
+    border: 10px solid transparent; /* Adjust the border width as needed */
+    border-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    border-image-slice: 1;
+    border-image-source: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#gl-canvas {
+    display: none; 
+}
+
+h1 {
+    font-family: 'ArcadeClassic', sans-serif;                                
+    margin:0;
+    display: flex;
+    font-size: 100px;
+    background: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    background-blend-mode: multiply;
+    background-size: 10px 100px;
+    background-repeat: repeat;
+    line-height: 1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.score {
+    display: none; 
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+}
+
+.score_content {
+    background: rgb(5, 6, 45);
+    border-radius: 17px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 45px;
+}
+
+.button {
+    display: none; 
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    color: #FCFCFD;
+    border-radius: 4px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    padding: 15px;
+    font-family: 'ArcadeClassic', sans-serif;   
+    font-size: 18px;
+    cursor: pointer;
+    transition: box-shadow .15s, transform .15s;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    margin-left: 5mm;
+}
+
+.button:focus {
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px, #D6D6E7 0 0 0 1.5px inset;
+}
+
+.button:hover {
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    transform: translateY(-2px);
+}
+
+.button:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.difficulty-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+
+}
+
+.difficulty-button {
+    margin-top: 10px;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    color: #FCFCFD;
+    border-radius: 4px;
+    box-shadow: rgba(123, 7, 255, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: 'ArcadeClassic', sans-serif;   
+    font-size: 50px;
+    cursor: pointer;
+    transition: box-shadow .15s, transform .15s;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+}
+.difficulty-button:hover{
+    transform: translateY(-3px);
+}
