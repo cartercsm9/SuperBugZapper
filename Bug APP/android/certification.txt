@@ -1,0 +1,24 @@
+---------------------------------------------------
+Here are the ownership and the certification details
+of the Super Bug Zapper 2D 1.0
+---------------------------------------------------
+
+app_name - 						Super Bug Zapper 2D
+app_alias - 					superbugzapper2d
+app_author_name - 				My Company
+app_author_organizational - 	My Company
+app_author_organization - 		My Company
+app_author_locality - 			My Company
+app_author_state - 				British Columbia
+app_author_country - 			Canada
+app_password - 					niOKi95OlF6u
+app_versionName - 				versionName "1.0"
+app_versionCode - 				100
+
+---------------------------------------------------
+The certification was created by WebIntoApp.com at
+the Thursday 1st of February 2024 09:35:14 PM
+
+https://www.webintoapp.com
+---------------------------------------------------
+
